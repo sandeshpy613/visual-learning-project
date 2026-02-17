@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Audio-Driven Object Learning for Hearing Impaired">
+    <meta property="og:title" content="Multilingual Speech-to-Generative-Video for Hearing-Impaired Object Learning">
+    <meta property="og:description"
+        content="An AI-powered tool that visualizes spoken objects in English and Kannada for special education.">
+    <meta property="og:image" content="static/images/teaser.png">
+    <meta property="twitter:title"
+        content="Multilingual Speech-to-Generative-Video for Hearing-Impaired Object Learning">
+    <meta property="twitter:description"
+        content="An AI-powered tool that visualizes spoken objects in English and Kannada for special education.">
+    <meta property="twitter:image" content="static/images/teaser.png">
+    <meta property="og:url" content="https://yourusername.github.io/project-repo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speech-to-Video for Object Learning</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="#">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Get Connected
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="http://www.linkedin.com/in/sandeshpy613">
+                            Sandesh PY LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Multilingual Speech-to-Generative-Video <br> for
+                            Hearing-Impaired Object Learning</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="#">Sandesh PY</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="#">Dr. Hamsaveni M</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="#">Dr. Chethana H T</a><sup>1</sup>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Vidyavardhaka College of Engineering, Mysuru</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="static/paper.pdf"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Review Paper</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/yourusername/your-repo"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                <!-- Presentation Link. -->
+                                <span class="link-block">
+                                    <a href="static/PPT.pdf" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-powerpoint"></i>
+                                        </span>
+                                        <span>Presentation</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                                    <a href="#video-demo" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Demo Video</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaser Video -->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video id="teaser" autoplay muted loop playsinline height="100%">
+                    <!-- Use a placeholder initially or user's video -->
+                    <source src="./static/videos/project_demo.mp4" type="video/mp4">
+                </video>
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Visual Learning Assistant</span>: Instantly visualizing spoken words (e.g.,
+                    "Apple", "Dog") into clear videos for special education.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            The rapid advancement of generative artificial intelligence offers a unique opportunity to
+                            bridge the communication and learning gap for children with hearing impairments.
+                            This project presents a novel system specifically designed to aid in fundamental vocabulary
+                            acquisition—specifically, the visual learning of everyday objects.
+                        </p>
+                        <p>
+                            Our system acts as a "visual dictionary", allowing users to speak or type a word (in
+                            <strong>English</strong> or <strong>Kannada</strong>) and instantly watch a generated,
+                            accurate video of that object in action.
+                            By bypassing traditional static flashcards and utilizing immersive video generation, the
+                            framework seeks to significantly reinforce object recognition and accelerate language
+                            retention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Pipeline -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Architecture & Pipeline</h2>
+                    <div class="content has-text-justified">
+                        <p>The system utilizes a multi-stage pipeline to ensure high-quality visual output from simple
+                            spoken words.</p>
+                    </div>
+
+                    <!-- Steps Visualization -->
+                    <div class="columns is-centered">
+                        <div class="column">
+                            <div class="box">
+                                <span class="icon is-large has-text-primary"><i
+                                        class="fas fa-microphone fa-3x"></i></span>
+                                <h4 class="title is-5 mt-4">Input</h4>
+                                <p>Accepts Voice/Text in English or Kannada (e.g., "ನಾಯಿ").</p>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="box">
+                                <span class="icon is-large has-text-info"><i class="fas fa-language fa-3x"></i></span>
+                                <h4 class="title is-5 mt-4">Translation</h4>
+                                <p>Translates regional language to English (e.g., "Dog").</p>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="box">
+                                <span class="icon is-large has-text-warning"><i class="fas fa-magic fa-3x"></i></span>
+                                <h4 class="title is-5 mt-4">Prompting</h4>
+                                <p>LLM expands "Dog" to "A cinematic video of a cute dog running."</p>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="box">
+                                <span class="icon is-large has-text-danger"><i class="fas fa-video fa-3x"></i></span>
+                                <h4 class="title is-5 mt-4">Generation</h4>
+                                <p>Latent Diffusion Model synthesizes the final video.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content has-text-centered mt-5">
+                        <img src="./static/images/placeholder_architecture.jpg" alt="Architecture Diagram" width="80%"
+                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+                        <p class="is-size-7 has-text-grey">Figure 1: End-to-End System Architecture</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Interactive Results (Carousel) -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Generated Examples</h2>
+                    <p class="mb-5">Real outputs generated by the system from simple single-word inputs.</p>
+
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <div class="item item-video1">
+                            <video poster="" id="video1" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/demo_1.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="subtitle has-text-centered">"LION"</h4>
+                        </div>
+                        <div class="item item-video2">
+                            <video poster="" id="video2" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/demo_2.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="subtitle has-text-centered">"Aeroplane"</h4>
+                        </div>
+                        <div class="item item-video3">
+                            <video poster="" id="video3" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/demo_3.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="subtitle has-text-centered">"Dog" (Kannada: ನಾಯಿ)</h4>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Comparison Table -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Comparison with Existing Tools</h2>
+            <div class="content">
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr class="has-background-grey-lighter">
+                                <th>Feature</th>
+                                <th>StoryDiffusion</th>
+                                <th>Talking Heads</th>
+                                <th>Our System (Visual Learning)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Primary Goal</strong></td>
+                                <td>Long Narrative Generation</td>
+                                <td>Face/Lip Animation</td>
+                                <td class="has-text-success has-text-weight-bold">Object Vocabulary Learning</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Input Mode</strong></td>
+                                <td>Text Prompts</td>
+                                <td>Audio/Image</td>
+                                <td class="has-text-success has-text-weight-bold">Voice & Text (Multilingual)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Visual Output</strong></td>
+                                <td>Complex Story Scenes</td>
+                                <td>Moving Lips/Face</td>
+                                <td class="has-text-success has-text-weight-bold">Clear, Isolated Object Video</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Target Audience</strong></td>
+                                <td>Creative Professionals</td>
+                                <td>General Communication</td>
+                                <td class="has-text-success has-text-weight-bold">Special Education (Hearing Impaired)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Video Demo Section -->
+    <section class="section" id="video-demo">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Full System Walkthrough</h2>
+            <div class="publication-video">
+                <video poster="" id="tree" autoplay controls muted loop playsinline height="100%">
+                    <!-- Use local file -->
+                    <source src="./static/videos/project_demo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+
+                <a class="icon-link" href="https://github.com/sandeshpy613" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+    </footer>
+
+</body>
+
+</html>
