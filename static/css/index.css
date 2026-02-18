@@ -280,11 +280,22 @@ pre {
 }
 
 /* Responsive Fixes */
+/* Responsive Fixes */
 html,
-body {
+body,
+.hero,
+.section,
+.footer {
   overflow-x: hidden;
+  max-width: 100vw;
   width: 100%;
   position: relative;
+  box-sizing: border-box;
+}
+
+/* Ensure no element exceeds viewport width */
+* {
+  box-sizing: border-box;
 }
 
 img,
@@ -298,12 +309,13 @@ iframe {
 .container {
   width: 100%;
   max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-x: hidden;
 }
 
 .container.is-max-desktop {
   max-width: 960px;
-  padding: 0 15px;
-  /* Add padding to prevent content touching edges */
 }
 
 /* Fix for Hero section padding on mobile */
@@ -360,21 +372,44 @@ iframe {
   justify-content: space-between;
 }
 
-/* Adjust font sizes for mobile */
+/* Mobile Specific Adjustments */
 @media screen and (max-width: 768px) {
+
+  /* Horizontal Scrollable Carousel for Mobile */
+  #results-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    margin-left: -1rem;
+    /* Counteract section padding to go full width */
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Items in horizontal scroll */
+  #results-carousel .item {
+    flex: 0 0 85vw;
+    /* Show 85% of video to show glimpse of next */
+    max-width: 85vw;
+    margin-right: 10px;
+  }
+
   .title.is-1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .title.is-3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .publication-authors {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
