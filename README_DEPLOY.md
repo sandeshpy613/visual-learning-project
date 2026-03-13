@@ -27,4 +27,4 @@ This folder contains a static website template for showcasing your "Multilingual
 3.  Go to **Settings** > **Pages** in your GitHub repository.
 4.  Under **Source**, select `main` (or `master`) branch.
 5.  Click **Save**.
-6.  Your site will be live at `https://yourusername.github.io/visual-learning-project/` in a few minutes!
+6.  Your site will be live at `https://sandeshpy613.github.io/visual-learning-project/` in a few minutes!
