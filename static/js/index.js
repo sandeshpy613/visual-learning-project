@@ -1,42 +1,14 @@
 $(document).ready(function () {
-    var options = {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        loop: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pagination: true,
-    }
-
-    // Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-
-    // Loop on each carousel initialized
-    for (var i = 0; i < carousels.length; i++) {
-        // Add listener to  event
-        carousels[i].on('before:show', state => {
-            console.log(state);
+    // We are now using a native horizontal scrollbar for the results section
+    // but we can still handle video behavior if needed.
+    
+    // Pause all other videos when one starts playing
+    $('video').on('play', function() {
+        var currentVideo = this;
+        $('video').each(function() {
+            if (this !== currentVideo) {
+                this.pause();
+            }
         });
-    }
-
-    // Access to bulmaCarousel instance of an element
-    var element = document.querySelector('#results-carousel');
-    if (element && element.bulmaCarousel) {
-        // bulmaCarousel instance is available as element.bulmaCarousel
-        element.bulmaCarousel.on('before-show', function (state) {
-            console.log(state);
-        });
-    }
-
-    // Access to bulmaCarousel instance of an element
-    var element = document.querySelector('#my-element');
-    if (element && element.bulmaCarousel) {
-        // bulmaCarousel instance is available as element.bulmaCarousel
-        element.bulmaCarousel.on('before-show', function (state) {
-            console.log(state);
-        });
-    }
-
-
+    });
 })

@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Audio-Driven Object Learning for Hearing Impaired">
-    <meta property="og:title" content="Multilingual Speech-to-Generative-Video for Hearing-Impaired Object Learning">
+    <meta name="description" content="Speech-to-Video Generation for Specially Abled Education">
+    <meta property="og:title"
+        content="Multimodal Speech-to-Video Generation Framework for Object Learning in Specially Abled Education">
     <meta property="og:description"
-        content="An AI-powered tool that visualizes spoken objects in English and Kannada for special education.">
+        content="An AI-powered framework that turns spoken or typed object names into short educational videos for specially abled learners.">
     <meta property="og:image" content="static/images/teaser.png">
     <meta property="twitter:title"
-        content="Multilingual Speech-to-Generative-Video for Hearing-Impaired Object Learning">
+        content="Multimodal Speech-to-Video Generation Framework for Object Learning in Specially Abled Education">
     <meta property="twitter:description"
-        content="An AI-powered tool that visualizes spoken objects in English and Kannada for special education.">
+        content="An AI-powered framework that turns spoken or typed object names into short educational videos for specially abled learners.">
     <meta property="twitter:image" content="static/images/teaser.png">
     <meta property="og:url" content="https://yourusername.github.io/project-repo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Speech-to-Video for Object Learning</title>
+    <title>Multimodal Speech-to-Video for Object Learning</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -71,8 +72,9 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">Multilingual Speech-to-Generative-Video <br> for
-                            Hearing-Impaired Object Learning</h1>
+                        <h1 class="title is-1 publication-title">Multimodal Speech-to-Video Generation Framework <br>
+                            for
+                            Object Learning in Specially Abled Education</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
                                 <a href="#">Sandesh PY</a><sup>1</sup>,</span>
@@ -160,18 +162,34 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            The rapid advancement of generative artificial intelligence offers a unique opportunity to
-                            bridge the communication and learning gap for children with hearing impairments.
-                            This project presents a novel system specifically designed to aid in fundamental vocabulary
-                            acquisition—specifically, the visual learning of everyday objects.
+                            Recent advancements in generative Artificial Intelligence (AI) have created new
+                            opportunities for developing
+                            interactive and accessible educational technologies. Specially abled learners, particularly
+                            hyperactive
+                            children, often rely on visual learning methods to understand object vocabulary and
+                            real-world concepts.
+                            However, traditional educational tools such as flashcards and static images provide limited
+                            dynamic visual representation.
                         </p>
                         <p>
-                            Our system acts as a "visual dictionary", allowing users to speak or type a word (in
-                            <strong>English</strong> or <strong>Kannada</strong>) and instantly watch a generated,
-                            accurate video of that object in action.
-                            By bypassing traditional static flashcards and utilizing immersive video generation, the
-                            framework seeks to significantly reinforce object recognition and accelerate language
-                            retention.
+                            This project presents a multimodal Speech-to-Video Generation Framework aimed at helping
+                            specially abled learners by
+                            turning spoken or typed object names into short educational videos. The system combines
+                            speech recognition, support for
+                            multiple languages, prompt generation, and generative AI-based video creation to generate
+                            visual demonstrations that
+                            match user input. Instead of training custom datasets, the system uses pretrained generative
+                            models run in a GPU-enabled
+                            environment to create multiple visual scenes for each object. These scenes are merged one
+                            after the other to produce
+                            a final educational video that can be accessed through a web-based interface.
+                        </p>
+                        <p>
+                            The prototype shows that it's possible to change spoken or written input into visual
+                            learning materials using generative AI
+                            methods. The framework emphasizes the ability of AI-based multimedia creation tools to
+                            improve accessibility
+                            and engagement in inclusive learning settings.
                         </p>
                     </div>
                 </div>
@@ -246,27 +264,25 @@
                     <h2 class="title is-3">Generated Examples</h2>
                     <p class="mb-5">Real outputs generated by the system from simple single-word inputs.</p>
 
-                    <div id="results-carousel" class="carousel results-carousel">
-                        <div class="item item-video1">
-                            <video poster="" id="video1" autoplay controls muted loop playsinline height="100%">
+                    <div id="results-carousel" class="carousel">
+                        <div class="carousel-item item-video1">
+                            <video poster="" id="video1" controls muted loop playsinline height="100%">
                                 <source src="./static/videos/demo_1.mp4" type="video/mp4">
                             </video>
-                            <h4 class="subtitle has-text-centered">"LION"</h4>
+                            <h4 class="subtitle has-text-centered mt-2">"LION"</h4>
                         </div>
-                        <div class="item item-video2">
-                            <video poster="" id="video2" autoplay controls muted loop playsinline height="100%">
+                        <div class="carousel-item item-video2">
+                            <video poster="" id="video2" controls muted loop playsinline height="100%">
                                 <source src="./static/videos/demo_2.mp4" type="video/mp4">
                             </video>
-                            <h4 class="subtitle has-text-centered">"Aeroplane"</h4>
+                            <h4 class="subtitle has-text-centered mt-2">"Aeroplane"</h4>
                         </div>
-                        <div class="item item-video3">
-                            <video poster="" id="video3" autoplay controls muted loop playsinline height="100%">
+                        <div class="carousel-item item-video3">
+                            <video poster="" id="video3" controls muted loop playsinline height="100%">
                                 <source src="./static/videos/demo_3.mp4" type="video/mp4">
                             </video>
-                            <h4 class="subtitle has-text-centered">"Dog" (Kannada: ನಾಯಿ)</h4>
+                            <h4 class="subtitle has-text-centered mt-2">"Dog" (Kannada: ನಾಯಿ)</h4>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -274,45 +290,96 @@
     </section>
 
 
-    <!-- Comparison Table -->
+    <!-- Results Table from Paper -->
     <section class="section">
         <div class="container is-max-desktop">
-            <h2 class="title is-3 has-text-centered">Comparison with Existing Tools</h2>
+            <h2 class="title is-3 has-text-centered">Experimental Analysis & Results</h2>
             <div class="content">
+                <p class="has-text-centered mb-4"><strong>Table I:</strong> Shows example outputs generated by the
+                    prototype system.</p>
                 <div class="table-container">
-                    <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered"
+                        style="margin: 0 auto;">
                         <thead>
                             <tr class="has-background-grey-lighter">
-                                <th>Feature</th>
-                                <th>StoryDiffusion</th>
-                                <th>Talking Heads</th>
-                                <th>Our System (Visual Learning)</th>
+                                <th class="has-text-centered">Input Object</th>
+                                <th class="has-text-centered">Generated Scenes</th>
+                                <th class="has-text-centered">Final Output</th>
+                                <th class="has-text-centered">Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Primary Goal</strong></td>
-                                <td>Long Narrative Generation</td>
-                                <td>Face/Lip Animation</td>
+                                <td><strong>Aeroplane</strong></td>
+                                <td>8 scenes</td>
+                                <td>Educational video</td>
+                                <td class="has-text-success has-text-weight-bold">Successful</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dog</strong></td>
+                                <td>8 scenes</td>
+                                <td class="has-text-info">Educational video</td>
+                                <td class="has-text-success has-text-weight-bold">Successful</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lion</strong></td>
+                                <td>8 scenes</td>
+                                <td>Educational video</td>
+                                <td class="has-text-success has-text-weight-bold">Successful</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparative Analysis Table -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Comparative Analysis with Reference Papers</h2>
+            <div class="content">
+                <p class="has-text-centered mb-4">Comparison of the proposed framework with key approaches discussed in
+                    the literature review.</p>
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+                        <thead>
+                            <tr class="has-background-grey-lighter">
+                                <th class="has-text-centered">Reference Paper</th>
+                                <th class="has-text-centered">Primary Goal</th>
+                                <th class="has-text-centered">Input Modality</th>
+                                <th class="has-text-centered">Visual Output</th>
+                                <th class="has-text-centered">Target Audience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="has-text-weight-bold">AI-Based Multilingual System [1]</td>
+                                <td>Multilingual Generation</td>
+                                <td>Text / Speech</td>
+                                <td>Synchronized Media</td>
+                                <td>General Learners</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-weight-bold">AI-Driven Accessibility [3, 4]</td>
+                                <td>Improve Accessibility</td>
+                                <td>Speech / Text</td>
+                                <td>Images, Emojis, Graphical Cues</td>
+                                <td>Hearing & Visually Impaired</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-weight-bold">Text-to-Video Diffusion [2, 9, 10]</td>
+                                <td>High-Quality Video Synthesis</td>
+                                <td>Text + Structural Guidance</td>
+                                <td>General Scene Videos</td>
+                                <td>General Users</td>
+                            </tr>
+                            <tr class="has-background-success-light">
+                                <td class="has-text-weight-bold has-text-success">Our Framework (Visual Learning)</td>
                                 <td class="has-text-success has-text-weight-bold">Object Vocabulary Learning</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Input Mode</strong></td>
-                                <td>Text Prompts</td>
-                                <td>Audio/Image</td>
                                 <td class="has-text-success has-text-weight-bold">Voice & Text (Multilingual)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Visual Output</strong></td>
-                                <td>Complex Story Scenes</td>
-                                <td>Moving Lips/Face</td>
-                                <td class="has-text-success has-text-weight-bold">Clear, Isolated Object Video</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Target Audience</strong></td>
-                                <td>Creative Professionals</td>
-                                <td>General Communication</td>
-                                <td class="has-text-success has-text-weight-bold">Special Education (Hearing Impaired)
+                                <td class="has-text-success has-text-weight-bold">Multi-Scene Educational Video</td>
+                                <td class="has-text-success has-text-weight-bold">Specially Abled (Hyperactive Children)
                                 </td>
                             </tr>
                         </tbody>

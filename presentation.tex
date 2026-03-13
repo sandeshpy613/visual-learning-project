@@ -1,0 +1,152 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+% Theme
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+
+% Title Page Information
+\title[Speech-to-Video Framework]{Multimodal Speech-to-Video Generation Framework for Object Learning in Specially Abled Education}
+\author[Sandesh PY]{Sandesh PY}
+\institute[VVCE, Mysuru]{
+    Dept. of Computer Science \& Engineering \\
+    Vidyavardhaka College of Engineering \\
+    Mysuru, India
+}
+\date{}
+
+\begin{document}
+
+% Slide 1: Title
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Slide 2: Introduction
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item \textbf{Goal}: Provide equal learning opportunities for specially abled learners, particularly hyperactive children.
+        \item \textbf{Challenge}: Traditional educational tools (flashcards, static images) provide limited dynamic representation of objects and actions.
+        \item \textbf{Solution}: A multimodal Speech-to-Video Generation Framework that converts spoken or typed object names into short educational videos.
+        \item \textbf{Core Technologies}: Generative AI, Latent Diffusion Models, Natural Language Processing, and Speech Recognition.
+    \end{itemize}
+\end{frame}
+
+% Slide 3: Proposed System Architecture
+\begin{frame}{Proposed System Architecture}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item \textbf{User Input}: Accepts speech or textual input.
+                \item \textbf{Speech Recognition \& Translation}: Converts audio to text.
+                \item \textbf{Prompt Generation}: Converts the object name into a structured template.
+                \item \textbf{GPU-Based Video Generation}: Uses pretrained generative models.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            % Placeholder for Image 1 from paper
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.9\textwidth]{1.png}
+                \caption{Proposed Speech-to-Video generation system architecture}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 4: Methodology \& Core Technologies
+\begin{frame}{Methodology \& Core Technologies}
+    \begin{itemize}
+        \item \textbf{Speech Processing}: Automatic Speech Recognition (ASR) algorithms convert user audio signals into textual data.
+        \item \textbf{Language Translation}: Neural Machine Translation models process regional script inputs (e.g., Kannada) and cross-translate them into English.
+        \item \textbf{Prompt Engineering}: Natural Language Processing (NLP) uses predefined, structured templates to maintain consistency in the generated visual characteristics.
+        \item \textbf{Video Generation Core}: Pretrained \textbf{Latent Diffusion Models} (and Generative Adversarial Networks) synthesize the final video frames mapped to the text prompt.
+        \item \textbf{Hardware Acceleration}: The heavy inference pipeline of the generative deep learning models is executed independently on dedicated \textbf{GPU-enabled servers}.
+    \end{itemize}
+\end{frame}
+
+% Slide 5: Multi-Scene Generation Methodology & Pipeline
+\begin{frame}{Processing Pipeline \& Scene Composition}
+    \vspace{-0.2cm}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{block}{Why Multiple Scenes?}
+                Instead of a single continuous shot, the system merges multiple small scenes.
+            \end{block}
+            \begin{itemize}
+                \item Viewpoint changes.
+                \item Object movement.
+                \item Context/background changes.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{block}{Pipeline Execution}
+                The scene composition involves a sequential pipeline:
+            \end{block}
+            \begin{itemize}
+                \item \textbf{Step 1: Contextual Prompting} \\
+                The core object is placed in diverse, educational environments to maintain attention.
+                \item \textbf{Step 2: Keyframe Synthesis} \\
+                The Diffusion model generates the base structural grids for each specific view.
+                \item \textbf{Step 3: Temporal Smoothing} \\
+                The individual scenes are merged sequentially. This provides an engaging, high-stimulus visual experience tailored for hyperactive learners.
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 6: Experimental Analysis & Results
+\begin{frame}{Experimental Analysis \& Results}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \item Tested with objects: \textit{apple, dog, tree, flower}.
+                \item Successfully generated 8-scene educational videos.
+            \end{itemize}
+
+            \vspace{0.3cm}
+            \resizebox{\textwidth}{!}{%
+            \begin{tabular}{@{}llc@{}}
+            \toprule
+            \textbf{Object} & \textbf{Scenes} & \textbf{Status} \\ \midrule
+            Aeroplane       & 8 scenes        & Successful       \\
+            Dog             & 8 scenes        & Successful       \\
+            Lion            & 8 scenes        & Successful       \\ \bottomrule
+            \end{tabular}%
+            }
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            % Placeholder for Image 3 from paper
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.9\textwidth]{2.png}
+                \caption{Multi-scene generation process showing eight frames}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 7: Conclusion
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item We presented a novel Speech-to-Video generation framework to assist specially abled learners via visual demonstrations.
+        \item The prototype confirms that using pretrained generative models without requiring custom datasets is a viable approach.
+        \item Dynamic visual representations effectively link speech or text-based concepts to clear visuals, bridging the learning gap.
+        \item This highlights the broader potential of Generative AI in creating accessible educational materials.
+    \end{itemize}
+\end{frame}
+
+% Slide 8: Questions
+\begin{frame}[standout]
+    \centering
+    \Huge \textbf{Thank You!}\\
+    \vspace{1cm}
+    \Large Any Questions?
+\end{frame}
+
+\end{document}
